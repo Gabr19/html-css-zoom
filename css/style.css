@@ -11,7 +11,47 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: cyan;
+    background-color: lightblue;
+    z-index: 30;
+}
+
+.container-header{
+    position: relative;
+}
+
+header > .container-header > .contained-header > div{
+    display: inline-block;
+    height: 100px;
+    min-width: 100px;
+    border: 1px solid black;
+    position: relative;
+    
+
+}
+
+.contained-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.icone-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 40px;
+    ;
+}
+
+
+.text-header{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    display: inline-block;
 }
 
 
@@ -30,9 +70,8 @@ main{
 }
 
 .container{
-    width: 800px;
+    width: 90%;
     min-height: 600px;
-    background-color: brown;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -42,11 +81,20 @@ main{
 }
 .img{
     background-image: url(https://picsum.photos/seed/picsum/200/300);
-    width: 150px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     margin: 5px;
+    position: relative;
+}
+
+.text-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: orange;
+    color: white;
 }
 
 /* FOOTER */
@@ -54,7 +102,7 @@ main{
 footer{
     background-color: gray;
     width: 100vw;
-    min-height: 100px;
+    max-height: 100px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -68,19 +116,41 @@ footer{
 footer > .container-footer > .footer-left > div{
     display: inline-block;
     height: 100px;
+    min-width: 100px;
     border: 1px solid black;
+    position: relative;
 }
 
 footer > .container-footer > .footer-center > div{
     display: inline-block;
     height: 100px;
+    min-width: 100px;
     border: 1px solid black;
+    position: relative;
 
 }
 
 footer > .container-footer > .footer-right > div{
     display: inline-block;
     height: 100px;
+    min-width: 100px;
     border: 1px solid black;
+    position: relative;
 
+}
+
+.icone-footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 40px;
+    ;
+}
+
+.text-footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% , 0%);
 }
