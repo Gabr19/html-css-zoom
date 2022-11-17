@@ -3,3 +3,84 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* HEADER */
+header{
+    width: 100vw;
+    min-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: cyan;
+}
+
+
+
+
+/* MAIN */
+main{
+    width: 100vw;
+    min-height: 600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.container{
+    width: 800px;
+    min-height: 600px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.img{
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: gray;
+    width: 100vw;
+    min-height: 100px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > .container-footer > .footer-left > div{
+    display: inline-block;
+    height: 100px;
+    border: 1px solid black;
+}
+
+footer > .container-footer > .footer-center > div{
+    display: inline-block;
+    height: 100px;
+    border: 1px solid black;
+
+}
+
+footer > .container-footer > .footer-right > div{
+    display: inline-block;
+    height: 100px;
+    border: 1px solid black;
+
+}
