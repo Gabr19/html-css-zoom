@@ -11,47 +11,56 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: lightblue;
+    background-color: black;
     z-index: 30;
+
 }
 
 .container-header{
+    width: 100vw;
+    min-height: 100px;
     position: relative;
-}
-
-header > .container-header > .contained-header > div{
-    display: inline-block;
-    height: 100px;
-    min-width: 100px;
-    border: 1px solid black;
-    position: relative;
-    
 
 }
 
-.contained-header{
+.container-piccolo-header{
+    min-height: 30px;
+    min-width: 30px;
+    /* border: 1px solid black; */
+    margin-top: 0;
     position: absolute;
     top: 0;
-    right: 0;
-    height: 100%;
+    right: 20px;
+}
+
+.container-piccolo-header > div{
+    display: inline-block;
+    color: white;
+}
+
+.container-piccolo-header > div > div{
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.container-piccolo-header > div:not(:last-child){
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-top: 3px;
+
+}
+
+#icona-singola-header{
+    margin-left: 5px;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-top: 3px;
 }
 
 .icone-header{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    font-size: 40px;
-    ;
-}
-
-
-.text-header{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50% , 0%);
-    display: inline-block;
+    font-size: 10px;
 }
 
 
@@ -93,8 +102,22 @@ main{
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: orange;
     color: white;
+    background-color: rgba(128, 128, 128, 0.5);
+
+}
+
+.text-img > div{
+    display: inline-block;
+    min-width: 20px;
+}
+
+
+.icone-main{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 15px;    
 }
 
 /* FOOTER */
@@ -145,7 +168,8 @@ footer > .container-footer > .footer-right > div{
     left: 50%;
     transform: translate(-50% , -50%);
     font-size: 40px;
-    ;
+    color: white;
+    
 }
 
 .text-footer{
@@ -153,4 +177,22 @@ footer > .container-footer > .footer-right > div{
     bottom: 0;
     left: 50%;
     transform: translate(-50% , 0%);
+    color: white;
+}
+
+
+.footer-right{
+    position: relative;
+    background-color: lightgray;
+
+}
+
+.footer-right > div > #right{
+    color: red;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+
 }
