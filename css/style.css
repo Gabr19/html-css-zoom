@@ -89,11 +89,13 @@ main{
 
 }
 .img{
-    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197__480.jpg);
     width: 300px;
     height: 200px;
     background-size: cover;
     background-position: center;
+
+    background-repeat: no-repeat;
     margin: 5px;
     position: relative;
 }
@@ -123,76 +125,50 @@ main{
 /* FOOTER */
 
 footer{
-    background-color: gray;
+    background-color: rgba(34,34,34,255);
     width: 100vw;
-    max-height: 100px;
+    height: 80px;
     position: fixed;
     left: 0;
     bottom: 0;
-}
-
-.container-footer{
     display: flex;
     justify-content: space-between;
 }
 
-footer > .container-footer > .footer-left > div{
-    display: inline-block;
-    height: 100px;
-    min-width: 100px;
-    border: 1px solid black;
-    position: relative;
+.footer-left{
+    display: flex;
 }
 
-footer > .container-footer > .footer-center > div{
-    display: inline-block;
-    height: 100px;
-    min-width: 100px;
-    border: 1px solid black;
-    position: relative;
-
-}
-
-footer > .container-footer > .footer-right > div{
-    display: inline-block;
-    height: 100px;
-    min-width: 100px;
-    border: 1px solid black;
-    position: relative;
-
-}
-
-.icone-footer{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    font-size: 40px;
+.icon{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
     color: white;
-    
-}
-
-.text-footer{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50% , 0%);
-    color: white;
-}
-
-
-.footer-right{
-    position: relative;
-    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    padding: 10px 5px;
 
 }
 
-.footer-right > div > #right{
-    color: red;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    text-align: center;
+.footer-center{
+    display: flex;
+}
 
+#green-icon{
+    color: rgba(75,200,0,255);
+}
+
+
+
+.footer-right {
+    display: flex;
+    background-color: rgba(74,74,74,255);
+
+}
+
+#right{
+    color: rgba(209,26,2,255);
 }
